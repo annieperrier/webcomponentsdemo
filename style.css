@@ -1,0 +1,24 @@
+html, body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tool-container {
+  background-color: lightgrey;
+  color: black;
+  padding: 10px;
+}
+.tool-item {
+  padding: 10px;
+}
+
+
+.fixit-component {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.fixit-item {
+  margin: auto;
+}

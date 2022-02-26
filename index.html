@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Components Demo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- add our demo components -->
+    <script src="components/fixit/fixit.js" defer></script>
+
+    <!-- add our JS -->
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>Web Components Demo</h1>
+
+    <p>Below are some exercises using JavaScript Web Components.</p>
+
+    <p>Open the console for logs.</p>
+
+    <h2>Documentation</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">MDN Web Components</a></li>
+      <li><a href="https://github.com/mdn/web-components-examples">MDN Web Components Examples</a></li>
+    </ul>
+
+    <hr/>
+
+    <h2>Fix It!</h2>
+
+    <p>A button to solve all your problems.</p>
+
+    <h3>Component</h3>
+  
+    <div class="fixit-component">
+      <div class="fixit-item">
+        <h3>Fix It! #1</h3>
+        <h4>no attributes</h4>
+        <fix-it id="fix-it-1"></fix-it>
+      </div>
+      <div class="fixit-item">
+        <h3>Fix It! #2</h3>
+        <h4>initial attributes: mode: advanced | initial-count: 20</h4>
+        <fix-it id="fix-it-2" mode="advanced" initial-count="20"></fix-it>
+      </div>
+    </div>
+
+    <h3>Tools</h3>
+  
+    <div class="tool-container">
+      <div class="tool-item">
+        <button onclick="fixitGetCurrentFixedCount(0)">Get current Fixed Count for element #1</button>
+        <br/>
+        <button onclick="fixitGetCurrentFixedCount(1)">Get current Fixed Count for element #2</button>
+      </div>
+      <div class="tool-item">
+        <button onclick="fixitSetMode(0, 'basic')">Set element #1 mode to: basic</button>
+        <br/>
+        <button onclick="fixitSetMode(0, 'advanced')">Set element #1 mode to: advanced</button>
+      </div>
+      <div class="tool-item">
+        <button onclick="fixitSetMode(1, 'basic')">Set element #2 mode to: basic</button>
+        <br/>
+        <button onclick="fixitSetMode(1, 'advanced')">Set element #2 mode to: advanced</button>
+      </div>
+
+    </div>
+
+    <hr/>
+
+  </body>
+</html>
