@@ -88,7 +88,7 @@ class FixIt extends HTMLElement {
     const cssElem = document.createElement('link');
     cssElem.setAttribute('rel', 'stylesheet');
     // TODO easier css path
-    cssElem.setAttribute('href', 'components/fixit/fixit.css');
+    cssElem.setAttribute('href', 'fixit/fixit.css');
     return cssElem;
   }
 
