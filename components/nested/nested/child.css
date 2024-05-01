@@ -1,0 +1,16 @@
+.child-container {
+  border: 3px solid grey;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+}
+.badge {
+  border: 1px solid darkolivegreen;
+  border-radius: 5px;
+  background-color: darkkhaki;
+  font-weight: bold;
+  font-size: 0.75em;
+  margin: 5px;
+  padding: 2px;
+}

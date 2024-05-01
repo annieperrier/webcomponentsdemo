@@ -1,0 +1,5 @@
+.parent-container {
+  border: 5px solid green;
+  width: fit-content;
+  display: flex;
+}
