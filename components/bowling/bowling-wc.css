@@ -1,0 +1,14 @@
+
+.scoreContainer {
+  border: 5px solid rgb(75, 145, 195);
+  float: left;
+}
+.scoreContainer input {
+  border: 3px solid #666;
+  width: 30px;
+  height: 30px;
+}
+.scoreContainer .total {
+  height: 60px;
+  background-color: #ccc;
+}
